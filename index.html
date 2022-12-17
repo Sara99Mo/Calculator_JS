@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!----------------- Fontawsome CSS ---------------->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!----------------- Animation CSS ---------------->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!------------------- Style CSS ------------------->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="container">  
+        <div class="calculate wow fadeInDown">
+            <div class="title">
+                <h1>Calculator</h1>
+            </div>
+            <div class="inputs">
+                <input type="number" name="" id="num1" placeholder="Enter First Number...">
+                <input type="number" name="" id="num2" placeholder="Enter Second Number...">
+                <span id="result"></span>
+            </div>
+            <div class="operation">
+                <button class="btn" id="clear">C</button>
+                <button class="btn btnactive" id="add">+</button>
+                <button class="btn btnactive" id="sub">-</button>
+                <button class="btn btnactive" id="mult">*</button>
+                <button class="btn btnactive" id="div">/</button>
+                <button class="btn btnactive" id="mod">%</button>
+                <button class="btn btnactive" id="power">^</button>
+                <button class="btn btnactive" id="root"><i class="fas fa-square-root-variable"></i></button>
+                <button class="btn btnactive" id="fact">X!</button>
+                <button class="btn btnactive" id="sin">sin</button>
+                <button class="btn btnactive" id="cos">cos</button>
+                <button class="btn btnactive" id="tan">tan</button>
+                <button class="btn btnactive" id="pow">1/x</button>
+                <button class="btn btnactive" id="asin">sin<sup>-1</sup></button>
+                <button class="btn btnactive" id="acos">cos<sup>-1</sup></button>
+                <button class="btn btnactive" id="atan">tan<sup>-1</sup></button>
+            </div>
+            <div id="equal"></div>
+            <button class="btn" id="history">History</button>
+        </div>
+        <div class="historyArea wow fadeInRight" id="historyArea">
+            <div class="title">
+                <h1>History <span id="count"></span></h1>
+                <button class="btn" id="clearAll">Clear All</button> 
+            </div>
+            <ul id="historyData"></ul> 
+        </div>
+    </div>
+    <!--------------- Jquery -------------->
+    <script src="assets/js/jquery-3.6.1.min.js"></script>
+    <!--------------- WOW JS -------------->
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!--------------- Main JS -------------->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
